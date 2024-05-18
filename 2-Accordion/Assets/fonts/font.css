@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "vazir medium";
+  src: url("./vazir/Vazir-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "vazir regular";
+  src: url("./vazir/Vazir-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "RubikGemstones-Regular";
+  src: url("./RubikGemstones-Regular.ttf") format("truetype");
+}
