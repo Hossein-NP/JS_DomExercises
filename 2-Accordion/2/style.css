@@ -1,0 +1,55 @@
+html {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  font-family: cursive;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.accordion-wrapper {
+  min-width: 40rem;
+  max-width: 60rem;
+}
+.accordion_title {
+  min-width: 40rem;
+  max-width: 60rem;
+  height: 5rem;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  line-height: 5rem;
+  padding: 0 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.accordion_title:hover {
+  background-color: rgb(30, 30, 30);
+}
+.accordion_caption {
+  min-width: 40rem;
+  max-width: 60rem;
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(30, 30, 50);
+  text-align: justify;
+}
+.open {
+  height: 8rem;
+  padding: 0.5rem 2rem 0.5rem 4rem;
+}
