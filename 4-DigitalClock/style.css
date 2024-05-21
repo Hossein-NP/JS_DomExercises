@@ -1,0 +1,113 @@
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.clock-ring {
+  width: 30rem;
+  height: 30rem;
+  /* border: 1px solid black; */
+  border-radius: 40rem;
+  -webkit-border-radius: 40rem;
+  -moz-border-radius: 40rem;
+  -ms-border-radius: 40rem;
+  -o-border-radius: 40rem;
+  perspective: 1000;
+  position: relative;
+}
+.clock-ring_1 , .clock-ring_2 {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid rgb(245, 105, 105);
+  border-radius: 40rem;
+  -webkit-border-radius: 40rem;
+  -moz-border-radius: 40rem;
+  -ms-border-radius: 40rem;
+  -o-border-radius: 40rem;
+  transform-style: preserve-3d;
+  transform: rotateX(85deg);
+  -webkit-transform: rotateX(85deg);
+  -moz-transform: rotateX(85deg);
+  -ms-transform: rotateX(85deg);
+  -o-transform: rotateX(85deg);
+  position: absolute;
+  background-color: rgb(39, 39, 39);
+  animation: ring1 alternate-reverse 10s infinite;
+  -webkit-animation: ring1 alternate-reverse 10s infinite;
+}
+.clock-ring_2 {
+  transform: translateY(5rem) rotateX(85deg);
+  -webkit-transform: translateY(5rem) rotateX(85deg);
+  -moz-transform: translateY(5rem) rotateX(85deg);
+  -ms-transform: translateY(5rem) rotateX(85deg);
+  -o-transform: translateY(5rem) rotateX(85deg);
+  animation: ring2 alternate-reverse 10s infinite;
+  -webkit-animation: ring2 alternate-reverse 10s infinite;
+}
+@keyframes ring1 {
+  0% {
+    transform: translateY(0) rotateX(85deg);
+    -webkit-transform: translateY(0) rotateX(85deg);
+    -moz-transform: translateY(0) rotateX(85deg);
+    -ms-transform: translateY(0) rotateX(85deg);
+    -o-transform: translateY(0) rotateX(85deg);
+    transform-style: preserve-3d;
+}
+50% {
+  transform: translateY(5rem) rotateX(85deg);
+  -webkit-transform: translateY(5rem);
+  -moz-transform: translateY(5rem);
+  -ms-transform: translateY(5rem);
+  -o-transform: translateY(5rem);
+  transform-style: preserve-3d;
+}
+100% {
+  transform: translateY(-5rem) rotateX(85deg);
+  -webkit-transform: translateY(-5rem);
+  -moz-transform: translateY(-5rem);
+  -ms-transform: translateY(-5rem);
+  -o-transform: translateY(-5rem);
+  transform-style: preserve-3d;
+}
+}
+@keyframes ring2 {
+  0% {
+    transform: translateY(5rem) rotateX(85deg);
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    transform-style: preserve-3d;
+}
+50% {
+  transform: translateY(-5rem) rotateX(85deg);
+  -webkit-transform: translateY(-5rem);
+  -moz-transform: translateY(-5rem);
+  -ms-transform: translateY(-5rem);
+  -o-transform: translateY(-5rem);
+  transform-style: preserve-3d;
+}
+100% {
+  transform: translateY(5rem) rotateX(85deg);
+  -webkit-transform: translateY(5rem);
+  -moz-transform: translateY(5rem);
+  -ms-transform: translateY(5rem);
+  -o-transform: translateY(5rem);
+  transform-style: preserve-3d;
+}
+}
